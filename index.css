@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins' ,sans-serif;
+   
+}
+body{
+    background: linear-gradient(45deg, #1a027c, #aa00c6);
+
+}
+nav{
+    height: 6vh;
+    
+    text-align: center;
+    line-height: 6vh;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+nav {
+    border-bottom: solid 5px white;
+}
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.todolist{
+    background-color:  white;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    padding-bottom:5vh ;
+    gap: 5vh;
+    border-radius: 10px;
+    box-shadow: 10px 25px 160px 50px lightblue;
+}
+#head{
+    color: #1a027c;
+    font-weight: bolder;
+    font-size: large;
+}
+.input{
+    gap: 2vw;
+    display: flex;
+}
+.input input{
+
+    height: 3.5vh;
+    width:30vw;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+    
+
+}
+.input button {
+    padding: 8px;
+   
+    background-color: #aa00c6;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 5px;   
+    color: white; 
+    width: max-content;
+}
+
+.taskcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+.task{
+    display: flex;
+    gap: 2vw;
+border-bottom: solid 3px #1a027c;  
+align-items: center;
+
+}
+.task p{
+line-height: 3.5vh;
+   min-height: 3.5vh;
+    width:30vw;
+    padding: 5px;
+    padding-left: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: small;
+    color: #1a027c;
+    font-weight: 700;
+}
+.task i{
+    
+    border-radius: 10px;
+  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-right: 5px;
+}
+@media(max-width:1004px){
+
+       .todolist{
+        margin-top: 5vh;
+        width:80vw;
+       }
+       .input input {
+        width: 60vw;
+
+       }
+       .task p{
+        width: 60vw;
+        line-height: 1;
+       }
+}
+@media(max-width:575px){
+    .input input{
+        width: 40vw;
+    }
+    .task p{
+        width: 60vw;
+        line-height: 1;
+        font-size: smaller;
+       }
+    
+}
